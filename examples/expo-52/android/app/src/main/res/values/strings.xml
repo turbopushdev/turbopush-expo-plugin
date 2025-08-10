@@ -1,0 +1,4 @@
+<resources>
+  <string name="app_name">Codepush plugin Demo</string>
+  <string name="CodePushDeploymentKey">dk_8605948c52aa922bd9471d61486efcf6</string>
+</resources>

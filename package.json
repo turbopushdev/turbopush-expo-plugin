@@ -1,0 +1,38 @@
+{
+  "name": "@turbopush/turbopush-expo-plugin",
+  "version": "1.0.0",
+  "main": "./app.plugin.js",
+  "license": "MIT",
+  "files": [
+    "app.plugin.js",
+    "build"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/turbopushdev/turbopush-expo-plugin.git"
+  },
+  "scripts": {
+    "build": "expo-module tsc",
+    "prebuild:all": "for dir in examples/*; do (echo \"$dir\" && cd \"$dir\" && yes | yarn prebuild --clean); done",
+    "prepare": "yarn build"
+  },
+  "keywords": [
+    "turbopush",
+    "expo",
+    "plugin",
+    "codepush",
+    "expo-codepush-plugin",
+    "react-native-code-push"
+  ],
+  "bugs": {
+    "url": "https://github.com/turbopushdev/turbopush-expo-plugin/issues"
+  },
+  "homepage": "https://github.com/turbopushdev/turbopush-expo-plugin#readme",
+
+  "dependencies": {},
+  "devDependencies": {
+    "expo-module-scripts": "^3.5.2",
+    "@expo/config-plugins": "~9.0.0",
+    "typescript": "~5.3.3"
+  }
+}
