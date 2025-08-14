@@ -2,8 +2,6 @@ import { ExpoConfig } from "expo/config";
 
 import * as pkg from "./package.json";
 
-const CodePushServerURL = "https://code-push-server-preview.denian-fossatti.workers.dev"
-
 const config: ExpoConfig = {
   slug: "test-codepush",
   owner: "test-codepush",
