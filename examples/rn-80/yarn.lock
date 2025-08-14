@@ -2481,9 +2481,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@turbopush/cli@npm:^1.0.24":
-  version: 1.0.24
-  resolution: "@turbopush/cli@npm:1.0.24"
+"@turbopush/cli@npm:^1.0.25":
+  version: 1.0.25
+  resolution: "@turbopush/cli@npm:1.0.25"
   dependencies:
     axios: 1.9.0
     backslash: ^0.2.0
@@ -2516,7 +2516,7 @@ __metadata:
     yazl: ^2.5.1
   bin:
     turbopush: dist/cli.js
-  checksum: 086b1a34550933433a06dbf6891b261311b03b86f5159bd45cdb61a42c09a8e3116d03eebf46c27b9ed8fd95cbb296b3e1a40e07aa9da08b5cca42d225958354
+  checksum: 853038e1d3c8e43c2802ba51d957a20d8b572e8e4f9d98266cf02850fd753063d3b4f6c63a15b2d26b8fe2e54935a40b579c8ee2924473b8e66ac69ab9df83e8
   languageName: node
   linkType: hard
 
@@ -2909,7 +2909,7 @@ __metadata:
     "@react-native/metro-config": 0.80.2
     "@react-native/new-app-screen": 0.80.2
     "@react-native/typescript-config": 0.80.2
-    "@turbopush/cli": ^1.0.24
+    "@turbopush/cli": ^1.0.25
     "@turbopush/react-native-code-push": ^10.2.3
     "@types/jest": ^29.5.13
     "@types/react": ^19.1.0
