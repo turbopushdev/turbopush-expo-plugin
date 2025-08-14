@@ -1,3 +1,17 @@
+# Turbopush Expo Plugin
+
+This plugin is used to manage the Turbopush updates for your Expo app.
+
+## Installation
+
+```bash
+yarn add @turbopush/turbopush-expo-plugin
+```
+
+## Setup
+
+Follow the instructions in our [plugin documentation](https://docs.turbopush.org/setup/expo-setup).
+
 ## Usage
 
 1. Open your Expo app config file (app.config.json or app.config.js instead of app.json).
