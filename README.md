@@ -11,7 +11,6 @@
         {
           android: {
             CodePushDeploymentKey: 'YOUR_ANDROID_CODE_PUSH_KEY',
-            CodePushPublicKey: 'YOUR_ANDROID_PUBLIC_KEY',
           },
           ios: {
             CodePushDeploymentKey: 'YOUR_IOS_CODE_PUSH_KEY',
