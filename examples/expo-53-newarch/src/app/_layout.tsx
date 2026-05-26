@@ -1,7 +1,7 @@
 import CodePush from "@turbopush/react-native-code-push";
 import "../global.css";
 import { Slot } from "expo-router";
-import { ErrorBoundary } from "@/ErrorBoundary";
+import { ErrorBoundary } from "@repo/shared/ErrorBoundary";
 
 function RootLayout() {
   return (

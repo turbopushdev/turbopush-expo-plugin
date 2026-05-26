@@ -4,8 +4,12 @@
     "paths": {
       "@/*": [
         "./src/*"
+      ],
+      "@repo/shared/*": [
+        "../shared/*"
       ]
-    }
+    },
+    "resolveJsonModule": true
   },
   "extends": "expo/tsconfig.base",
   "include": [

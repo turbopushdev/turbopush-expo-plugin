@@ -1,6 +1,6 @@
 import { ExpoConfig } from "expo/config";
 
-import * as pkg from "./package.json";
+import { APP_VERSION } from "../shared/constants.json";
 
 const config: ExpoConfig = {
   slug: "test-codepush",
@@ -8,7 +8,7 @@ const config: ExpoConfig = {
   android: {
     package: "com.test.codepush",
     versionCode: 1,
-    version: pkg.version,
+    version: APP_VERSION,
   },
   assetBundlePatterns: ["**/*"],
   experiments: {
@@ -20,7 +20,7 @@ const config: ExpoConfig = {
     buildNumber: "1",
     supportsTablet: true,
     bundleIdentifier: "com.test.codepush",
-    version: pkg.version,
+    version: APP_VERSION,
   },
   updates: {
     enabled: false,
@@ -30,18 +30,13 @@ const config: ExpoConfig = {
   orientation: "portrait",
   plugins: [
     [
-      'expo-build-properties',
+      "expo-build-properties",
       {
-        android: {
-          buildToolsVersion: '34.0.0',
-          compileSdkVersion: 35,
-          targetSdkVersion: 34,
-        },
         ios: {
           deploymentTarget: "15.5",
           hermes: true,
           privacyManifestAggregationEnabled: true,
-          useFrameworks: 'static',
+          useFrameworks: "static",
         },
       },
     ],
@@ -49,10 +44,12 @@ const config: ExpoConfig = {
       "../../app.plugin.js",
       {
         android: {
-          CodePushDeploymentKey: process.env.EXPO_PUBLIC_CODE_PUSH_KEY_ANDROID ?? "FAKE_KEY",
+          CodePushDeploymentKey:
+            process.env.EXPO_PUBLIC_CODE_PUSH_KEY_ANDROID ?? "FAKE_KEY",
         },
         ios: {
-          CodePushDeploymentKey: process.env.EXPO_PUBLIC_CODE_PUSH_KEY_IOS ?? "FAKE_KEY",
+          CodePushDeploymentKey:
+            process.env.EXPO_PUBLIC_CODE_PUSH_KEY_IOS ?? "FAKE_KEY",
         },
       },
     ],
@@ -60,7 +57,7 @@ const config: ExpoConfig = {
   ],
   scheme: "com.test.codepush",
   userInterfaceStyle: "automatic",
-  version: pkg.version,
+  version: APP_VERSION,
 };
 
 export default config;

@@ -16,7 +16,12 @@
     "run:all": "bash -c 'for dir in examples/expo*/; do (echo \"[$dir] running $1\" && yarn --cwd \"$dir\" \"$1\") & done; wait' --",
     "prebuild:all": "yes | yarn run:all prebuild --clean",
     "install:all": "yarn run:all install",
-    "prepare": "yarn build"
+    "prepare": "yarn build",
+    "deps:update": "ncu --filter '@turbopush/*' -u --packageFile 'examples/*/package.json'",
+    "e2e": "bash scripts/run_e2e.sh",
+    "e2e:all": "bash scripts/run_e2e_all.sh",
+    "e2e:all:ios": "bash scripts/run_e2e_all.sh ios",
+    "e2e:all:android": "bash scripts/run_e2e_all.sh android"
   },
   "keywords": [
     "turbopush",
@@ -33,6 +38,7 @@
   "devDependencies": {
     "@expo/config-plugins": "~9.0.0",
     "expo-module-scripts": "^3.5.2",
+    "npm-check-updates": "^22.2.0",
     "typescript": "~5.3.3"
   },
   "packageManager": "yarn@4.15.0"

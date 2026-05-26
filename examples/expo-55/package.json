@@ -1,6 +1,6 @@
 {
   "name": "expo-55",
-  "version": "1.0.2",
+  "version": "0.0.1",
   "main": "expo-router/entry",
   "scripts": {
     "build:plugin": "yarn --cwd ../.. build",
@@ -16,6 +16,7 @@
     "codepush": "yarn codepush:normal --mandatory"
   },
   "dependencies": {
+    "@repo/shared": "portal:../shared",
     "@turbopush/react-native-code-push": "^10.2.6",
     "expo": "~55.0.0",
     "expo-application": "~55.0.15",
@@ -38,7 +39,7 @@
     "tailwindcss": "^3.4.0"
   },
   "devDependencies": {
-    "@turbopush/cli": "^1.0.25",
+    "@turbopush/cli": "^1.0.27",
     "@types/react": "~19.2.10",
     "rimraf": "^6.0.1",
     "typescript": "~5.9.2"

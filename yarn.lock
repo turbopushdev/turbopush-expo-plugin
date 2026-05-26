@@ -2272,6 +2272,7 @@ __metadata:
   dependencies:
     "@expo/config-plugins": "npm:~9.0.0"
     expo-module-scripts: "npm:^3.5.2"
+    npm-check-updates: "npm:^22.2.0"
     typescript: "npm:~5.3.3"
   languageName: unknown
   linkType: soft
@@ -5696,6 +5697,16 @@ __metadata:
   version: 3.0.0
   resolution: "normalize-path@npm:3.0.0"
   checksum: 10/88eeb4da891e10b1318c4b2476b6e2ecbeb5ff97d946815ffea7794c31a89017c70d7f34b3c2ebf23ef4e9fc9fb99f7dffe36da22011b5b5c6ffa34f4873ec20
+  languageName: node
+  linkType: hard
+
+"npm-check-updates@npm:^22.2.0":
+  version: 22.2.1
+  resolution: "npm-check-updates@npm:22.2.1"
+  bin:
+    ncu: build/cli.js
+    npm-check-updates: build/cli.js
+  checksum: 10/2090f3ea5fea9d247c23e5fbc569fb5706df8109a42a5ab272eb759c44cd810d9a1bd525a793e05f091bbda54d17bd93ddf5bd595e82b66d6d096a176b4d8d10
   languageName: node
   linkType: hard
 
