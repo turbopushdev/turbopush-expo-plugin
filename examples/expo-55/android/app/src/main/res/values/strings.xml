@@ -1,0 +1,4 @@
+<resources>
+  <string name="app_name">Codepush plugin Demo</string>
+  <string name="CodePushDeploymentKey">FAKE_KEY</string>
+</resources>
