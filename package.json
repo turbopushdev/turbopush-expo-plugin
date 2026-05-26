@@ -13,7 +13,9 @@
   },
   "scripts": {
     "build": "expo-module tsc",
-    "prebuild:all": "for dir in examples/*; do (echo \"$dir\" && cd \"$dir\" && yes | yarn prebuild --clean); done",
+    "run:all": "bash -c 'for dir in examples/expo*/; do (echo \"[$dir] running $1\" && yarn --cwd \"$dir\" \"$1\") & done; wait' --",
+    "prebuild:all": "yes | yarn run:all prebuild --clean",
+    "install:all": "yarn run:all install",
     "prepare": "yarn build"
   },
   "keywords": [
@@ -33,5 +35,5 @@
     "expo-module-scripts": "^3.5.2",
     "typescript": "~5.3.3"
   },
-  "packageManager": "yarn@3.6.4"
+  "packageManager": "yarn@4.15.0"
 }

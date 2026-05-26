@@ -3,7 +3,8 @@
   "version": "1.0.2",
   "main": "expo-router/entry",
   "scripts": {
-    "prebuild": "expo prebuild",
+    "build:plugin": "yarn --cwd ../.. build",
+    "prebuild": "yarn build:plugin && expo prebuild",
     "start": "expo start",
     "android": "yarn prebuild && expo run:android",
     "ios": "yarn prebuild && expo run:ios",
