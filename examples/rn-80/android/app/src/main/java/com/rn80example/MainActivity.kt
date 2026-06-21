@@ -1,4 +1,4 @@
-package com.rn80example
+package com.test.codepush
 
 import com.facebook.react.ReactActivity
 import com.facebook.react.ReactActivityDelegate

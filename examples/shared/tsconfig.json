@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "paths": {
+      // This is a workaround to avoid the "Module not found"
+      // error when using the shared library in the expo project
+      "react-native": ["../expo-56/node_modules/react-native"],
+      "@turbopush/react-native-code-push": [
+        "../expo-56/node_modules/@turbopush/react-native-code-push"
+      ],
+      "nativewind": ["../expo-56/node_modules/nativewind"],
+      "react-native-css-interop": [
+        "../expo-56/node_modules/react-native-css-interop"
+      ]
+    }
+  },
+  "include": ["./**/*.ts", "./**/*.tsx", "./nativewind-env.d.ts"]
+}

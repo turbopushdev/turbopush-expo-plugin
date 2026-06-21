@@ -1,0 +1,48 @@
+{
+  "name": "expo-55",
+  "version": "0.0.1",
+  "main": "expo-router/entry",
+  "scripts": {
+    "build:plugin": "yarn --cwd ../.. build",
+    "prebuild": "yarn build:plugin && expo prebuild",
+    "start": "expo start",
+    "android": "yarn prebuild && expo run:android",
+    "ios": "yarn prebuild && expo run:ios",
+    "web": "expo start --web",
+    "deploy": "npx expo export -p web && npx eas-cli@latest deploy",
+    "codepush:normal": "yarn turbopush release-expo cli-official ios 1.0.2 -d Production -r 100",
+    "codepush:android:normal": "yarn turbopush release-expo cli-official-android android 1.0.2 -d Production -r 100",
+    "codepush:android": "yarn codepush:android:normal --mandatory",
+    "codepush": "yarn codepush:normal --mandatory"
+  },
+  "dependencies": {
+    "@repo/shared": "portal:../shared",
+    "@turbopush/react-native-code-push": "^10.2.6",
+    "expo": "~55.0.0",
+    "expo-application": "~55.0.15",
+    "expo-build-properties": "~55.0.14",
+    "expo-constants": "~55.0.16",
+    "expo-dev-client": "~55.0.35",
+    "expo-linking": "~55.0.15",
+    "expo-router": "~55.0.16",
+    "expo-splash-screen": "~55.0.21",
+    "expo-status-bar": "~55.0.6",
+    "nativewind": "^4.0.1",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "react-native": "0.83.6",
+    "react-native-reanimated": "4.2.1",
+    "react-native-safe-area-context": "~5.6.2",
+    "react-native-screens": "~4.23.0",
+    "react-native-web": "^0.21.0",
+    "react-native-worklets": "0.7.4",
+    "tailwindcss": "^3.4.0"
+  },
+  "devDependencies": {
+    "@turbopush/cli": "^1.0.27",
+    "@types/react": "~19.2.10",
+    "rimraf": "^6.0.1",
+    "typescript": "~5.9.2"
+  },
+  "private": true
+}

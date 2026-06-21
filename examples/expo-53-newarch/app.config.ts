@@ -1,6 +1,6 @@
 import { ExpoConfig } from "expo/config";
 
-import * as pkg from "./package.json";
+import { APP_VERSION } from "../shared/constants.json";
 
 const config: ExpoConfig = {
   slug: "test-codepush",
@@ -8,7 +8,7 @@ const config: ExpoConfig = {
   android: {
     package: "com.test.codepush",
     versionCode: 1,
-    version: pkg.version,
+    version: APP_VERSION,
   },
   newArchEnabled: true,
   assetBundlePatterns: ["**/*"],
@@ -20,7 +20,7 @@ const config: ExpoConfig = {
     buildNumber: "1",
     supportsTablet: true,
     bundleIdentifier: "com.test.codepush",
-    version: pkg.version,
+    version: APP_VERSION,
   },
   updates: {
     enabled: false,
@@ -29,6 +29,8 @@ const config: ExpoConfig = {
   name: "Codepush plugin Demo",
   orientation: "portrait",
   plugins: [
+    // temporary fix for fmt 11.0.2 consteval compilation error on Xcode 26.4+
+    "../shared/plugins/ios/withFmtFix",
     [
       'expo-build-properties',
       {
@@ -60,7 +62,7 @@ const config: ExpoConfig = {
   ],
   scheme: "com.test.codepush",
   userInterfaceStyle: "automatic",
-  version: pkg.version,
+  version: APP_VERSION,
 };
 
 export default config;

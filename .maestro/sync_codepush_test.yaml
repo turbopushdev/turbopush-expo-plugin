@@ -1,0 +1,28 @@
+appId: ${BUNDLE_ID}
+---
+- launchApp:
+    clearState: true
+# App must be visible with the correct version from constants.ts
+# - extendedWaitUntil:
+#     visible:
+#       text: "Turbopush Demo - ${APP_VERSION}"
+#     timeout: 15000
+
+- assertVisible: "Status: UNKNOWN"
+
+- tapOn:
+    text: "Sync CodePush"
+
+- assertVisible: "Status: UNKNOWN"
+
+# For mandatory updates with mandatoryInstallMode: IMMEDIATE, the app restarts automatically.
+# Re-launch it in case it went to the home screen during the restart cycle.
+
+# Wait for the app to come back after restart
+- extendedWaitUntil:
+    visible:
+      text: "Turbopush Demo - ${APP_VERSION}"
+    timeout: 20000
+
+# There must be no error state
+- assertNotVisible: "ERROR"

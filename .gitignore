@@ -2,6 +2,9 @@
 
 # dependencies
 node_modules/
+.yarn/cache/
+**/.yarn/cache/
+**/.yarn/install-state.gz
 
 # Expo
 .expo/
@@ -11,6 +14,7 @@ expo-env.d.ts
 
 # Native
 *.orig.*
+**/ios/Pods/
 *.jks
 *.p8
 *.p12

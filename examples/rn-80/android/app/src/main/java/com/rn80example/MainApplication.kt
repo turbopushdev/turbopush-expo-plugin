@@ -1,4 +1,4 @@
-package com.rn80example
+package com.test.codepush
 
 import android.app.Application
 import com.facebook.react.PackageList
