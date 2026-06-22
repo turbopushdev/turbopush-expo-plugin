@@ -16,9 +16,9 @@
     "codepush": "yarn codepush:normal --mandatory"
   },
   "dependencies": {
-    "@repo/shared": "portal:../shared",
     "@expo/config-plugins": "~10.1.1",
-    "@turbopush/react-native-code-push": "^10.2.6",
+    "@repo/shared": "portal:../shared",
+    "@turbopush/react-native-code-push": "^10.3.0-rc.1",
     "expo": "^53.0.0",
     "expo-application": "~6.1.5",
     "expo-build-properties": "~0.14.8",

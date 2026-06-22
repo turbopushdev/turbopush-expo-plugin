@@ -8,25 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		231F8F72D7CE31920648475D /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4355E14B8B0EE1BAC6528071 /* ExpoModulesProvider.swift */; };
 		3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */; };
-		8AC9A4536809A608C5249D21 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93A8288C706250E0BD07AAC /* ExpoModulesProvider.swift */; };
+		81C1ABDD11925D56139818A2 /* Pods_CodepushpluginDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E15094815EFCBE5ABEE5F34 /* Pods_CodepushpluginDemo.framework */; };
+		B44BB669848BD8748D46BEA7 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = ABB14FB9E18F3E83DAF264F8 /* PrivacyInfo.xcprivacy */; };
 		BB2F792D24A3F905000567C9 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
-		BE069FD972E69FDBE6AED12D /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 4B96EF4B3142E3A4BD7A4416 /* PrivacyInfo.xcprivacy */; };
-		ECE4C7C368161C91FEA06AED /* Pods_CodepushpluginDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2083AAA790A2A4942351FEFA /* Pods_CodepushpluginDemo.framework */; };
 		F11748422D0307B40044C1D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11748412D0307B40044C1D9 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		07EA303F9306288E76BF5C2C /* Pods-CodepushpluginDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodepushpluginDemo.debug.xcconfig"; path = "Target Support Files/Pods-CodepushpluginDemo/Pods-CodepushpluginDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* CodepushpluginDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodepushpluginDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = CodepushpluginDemo/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = CodepushpluginDemo/Info.plist; sourceTree = "<group>"; };
-		2083AAA790A2A4942351FEFA /* Pods_CodepushpluginDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodepushpluginDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		395F4936D7B6687756A3145B /* Pods-CodepushpluginDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodepushpluginDemo.debug.xcconfig"; path = "Target Support Files/Pods-CodepushpluginDemo/Pods-CodepushpluginDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		4B96EF4B3142E3A4BD7A4416 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = CodepushpluginDemo/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		5C9CD25B7B9A1C49A50D9D82 /* Pods-CodepushpluginDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodepushpluginDemo.release.xcconfig"; path = "Target Support Files/Pods-CodepushpluginDemo/Pods-CodepushpluginDemo.release.xcconfig"; sourceTree = "<group>"; };
+		1E15094815EFCBE5ABEE5F34 /* Pods_CodepushpluginDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodepushpluginDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4355E14B8B0EE1BAC6528071 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-CodepushpluginDemo/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
 		AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = CodepushpluginDemo/SplashScreen.storyboard; sourceTree = "<group>"; };
-		B93A8288C706250E0BD07AAC /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-CodepushpluginDemo/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
+		ABB14FB9E18F3E83DAF264F8 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = CodepushpluginDemo/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		BB2F792C24A3F905000567C9 /* Expo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Expo.plist; sourceTree = "<group>"; };
+		E3CD6B1D2AE849E4FFE55D88 /* Pods-CodepushpluginDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodepushpluginDemo.release.xcconfig"; path = "Target Support Files/Pods-CodepushpluginDemo/Pods-CodepushpluginDemo.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		F11748412D0307B40044C1D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = CodepushpluginDemo/AppDelegate.swift; sourceTree = "<group>"; };
 		F11748442D0722820044C1D9 /* CodepushpluginDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CodepushpluginDemo-Bridging-Header.h"; path = "CodepushpluginDemo/CodepushpluginDemo-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -37,31 +37,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECE4C7C368161C91FEA06AED /* Pods_CodepushpluginDemo.framework in Frameworks */,
+				81C1ABDD11925D56139818A2 /* Pods_CodepushpluginDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00B5301FA060676EF6F24295 /* ExpoModulesProviders */ = {
-			isa = PBXGroup;
-			children = (
-				6122768E6AD92EFB3DFBBCCE /* CodepushpluginDemo */,
-			);
-			name = ExpoModulesProviders;
-			sourceTree = "<group>";
-		};
-		0F05EF6B97F6C7327B3255CD /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				395F4936D7B6687756A3145B /* Pods-CodepushpluginDemo.debug.xcconfig */,
-				5C9CD25B7B9A1C49A50D9D82 /* Pods-CodepushpluginDemo.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		13B07FAE1A68108700A75B9A /* CodepushpluginDemo */ = {
 			isa = PBXGroup;
 			children = (
@@ -71,7 +53,7 @@
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */,
-				4B96EF4B3142E3A4BD7A4416 /* PrivacyInfo.xcprivacy */,
+				ABB14FB9E18F3E83DAF264F8 /* PrivacyInfo.xcprivacy */,
 			);
 			name = CodepushpluginDemo;
 			sourceTree = "<group>";
@@ -80,17 +62,27 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				2083AAA790A2A4942351FEFA /* Pods_CodepushpluginDemo.framework */,
+				1E15094815EFCBE5ABEE5F34 /* Pods_CodepushpluginDemo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		6122768E6AD92EFB3DFBBCCE /* CodepushpluginDemo */ = {
+		354A70E3E6ED1E1F8E3ABC39 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B93A8288C706250E0BD07AAC /* ExpoModulesProvider.swift */,
+				07EA303F9306288E76BF5C2C /* Pods-CodepushpluginDemo.debug.xcconfig */,
+				E3CD6B1D2AE849E4FFE55D88 /* Pods-CodepushpluginDemo.release.xcconfig */,
 			);
-			name = CodepushpluginDemo;
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		610D3E3FF1CD57E224F43A62 /* ExpoModulesProviders */ = {
+			isa = PBXGroup;
+			children = (
+				DEC25E5926B8F01F96985766 /* CodepushpluginDemo */,
+			);
+			name = ExpoModulesProviders;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -107,8 +99,8 @@
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
-				0F05EF6B97F6C7327B3255CD /* Pods */,
-				00B5301FA060676EF6F24295 /* ExpoModulesProviders */,
+				354A70E3E6ED1E1F8E3ABC39 /* Pods */,
+				610D3E3FF1CD57E224F43A62 /* ExpoModulesProviders */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -132,6 +124,14 @@
 			path = CodepushpluginDemo/Supporting;
 			sourceTree = "<group>";
 		};
+		DEC25E5926B8F01F96985766 /* CodepushpluginDemo */ = {
+			isa = PBXGroup;
+			children = (
+				4355E14B8B0EE1BAC6528071 /* ExpoModulesProvider.swift */,
+			);
+			name = CodepushpluginDemo;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -140,14 +140,14 @@
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "CodepushpluginDemo" */;
 			buildPhases = (
 				08A4A3CD28434E44B6B9DE2E /* [CP] Check Pods Manifest.lock */,
-				B75208FB9BC8E258C14E9437 /* [Expo] Configure project */,
+				B55FA0709CF093B8D0FE1538 /* [Expo] Configure project */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				800E24972A6A228C8D4807E9 /* [CP] Copy Pods Resources */,
-				E68BCB149AAD49068C20E5EE /* [Expo Dev Launcher] Strip Local Network Keys for Release */,
-				4E9BAA5B7C18AEC55CB40F38 /* [CP] Embed Pods Frameworks */,
+				9CA6481B97114699863DDC76 /* [Expo Dev Launcher] Strip Local Network Keys for Release */,
+				22589393B65F7639D7AFCDB4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -197,7 +197,7 @@
 				BB2F792D24A3F905000567C9 /* Expo.plist in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */,
-				BE069FD972E69FDBE6AED12D /* PrivacyInfo.xcprivacy in Resources */,
+				B44BB669848BD8748D46BEA7 /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,7 +243,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		4E9BAA5B7C18AEC55CB40F38 /* [CP] Embed Pods Frameworks */ = {
+		22589393B65F7639D7AFCDB4 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -309,7 +309,22 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CodepushpluginDemo/Pods-CodepushpluginDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B75208FB9BC8E258C14E9437 /* [Expo] Configure project */ = {
+		9CA6481B97114699863DDC76 /* [Expo Dev Launcher] Strip Local Network Keys for Release */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(TARGET_BUILD_DIR)/$(INFOPLIST_PATH)",
+			);
+			name = "[Expo Dev Launcher] Strip Local Network Keys for Release";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Strip dev-launcher-specific local network permission keys from non-Debug builds\n# This only removes _expo._tcp Bonjour services and the dev-launcher usage description.\n# Other Bonjour services and custom descriptions are preserved for production use.\n\nif [ \"$CONFIGURATION\" != \"Debug\" ]; then\n  PLIST_PATH=\"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\n  if [ -f \"$PLIST_PATH\" ]; then\n    # Check if NSBonjourServices exists\n    if /usr/libexec/PlistBuddy -c \"Print :NSBonjourServices\" \"$PLIST_PATH\" >/dev/null 2>&1; then\n      # Get the count of services\n      COUNT=$(/usr/libexec/PlistBuddy -c \"Print :NSBonjourServices\" \"$PLIST_PATH\" 2>/dev/null | grep \"^    \" | wc -l | tr -d ' ')\n\n      # Remove _expo._tcp\n      for ((i=COUNT-1; i>=0; i--)); do\n        SERVICE=$(/usr/libexec/PlistBuddy -c \"Print :NSBonjourServices:$i\" \"$PLIST_PATH\" 2>/dev/null || echo \"\")\n        if echo \"$SERVICE\" | grep -q \"_expo._tcp\"; then\n          /usr/libexec/PlistBuddy -c \"Delete :NSBonjourServices:$i\" \"$PLIST_PATH\" 2>/dev/null || true\n        fi\n      done\n\n      # If the array is now empty, remove it entirely\n      REMAINING=$(/usr/libexec/PlistBuddy -c \"Print :NSBonjourServices\" \"$PLIST_PATH\" 2>/dev/null | grep \"^    \" | wc -l | tr -d ' ')\n      if [ \"$REMAINING\" -eq \"0\" ]; then\n        /usr/libexec/PlistBuddy -c \"Delete :NSBonjourServices\" \"$PLIST_PATH\" 2>/dev/null || true\n      fi\n    fi\n\n    # Only delete the description if it matches the dev-launcher default text\n    DESC=$(/usr/libexec/PlistBuddy -c \"Print :NSLocalNetworkUsageDescription\" \"$PLIST_PATH\" 2>/dev/null || echo \"\")\n    if echo \"$DESC\" | grep -q \"Expo Dev Launcher\"; then\n      /usr/libexec/PlistBuddy -c \"Delete :NSLocalNetworkUsageDescription\" \"$PLIST_PATH\" 2>/dev/null || true\n    fi\n  fi\nfi\n";
+		};
+		B55FA0709CF093B8D0FE1538 /* [Expo] Configure project */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
@@ -333,21 +348,6 @@
 			shellPath = /bin/sh;
 			shellScript = "# This script configures Expo modules and generates the modules provider file.\nbash -l -c \"./Pods/Target\\ Support\\ Files/Pods-CodepushpluginDemo/expo-configure-project.sh\"\n";
 		};
-		E68BCB149AAD49068C20E5EE /* [Expo Dev Launcher] Strip Local Network Keys for Release */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(TARGET_BUILD_DIR)/$(INFOPLIST_PATH)",
-			);
-			name = "[Expo Dev Launcher] Strip Local Network Keys for Release";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Strip dev-launcher-specific local network permission keys from non-Debug builds\n# This only removes _expo._tcp Bonjour services and the dev-launcher usage description.\n# Other Bonjour services and custom descriptions are preserved for production use.\n\nif [ \"$CONFIGURATION\" != \"Debug\" ]; then\n  PLIST_PATH=\"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\n  if [ -f \"$PLIST_PATH\" ]; then\n    # Check if NSBonjourServices exists\n    if /usr/libexec/PlistBuddy -c \"Print :NSBonjourServices\" \"$PLIST_PATH\" >/dev/null 2>&1; then\n      # Get the count of services\n      COUNT=$(/usr/libexec/PlistBuddy -c \"Print :NSBonjourServices\" \"$PLIST_PATH\" 2>/dev/null | grep \"^    \" | wc -l | tr -d ' ')\n\n      # Remove _expo._tcp\n      for ((i=COUNT-1; i>=0; i--)); do\n        SERVICE=$(/usr/libexec/PlistBuddy -c \"Print :NSBonjourServices:$i\" \"$PLIST_PATH\" 2>/dev/null || echo \"\")\n        if echo \"$SERVICE\" | grep -q \"_expo._tcp\"; then\n          /usr/libexec/PlistBuddy -c \"Delete :NSBonjourServices:$i\" \"$PLIST_PATH\" 2>/dev/null || true\n        fi\n      done\n\n      # If the array is now empty, remove it entirely\n      REMAINING=$(/usr/libexec/PlistBuddy -c \"Print :NSBonjourServices\" \"$PLIST_PATH\" 2>/dev/null | grep \"^    \" | wc -l | tr -d ' ')\n      if [ \"$REMAINING\" -eq \"0\" ]; then\n        /usr/libexec/PlistBuddy -c \"Delete :NSBonjourServices\" \"$PLIST_PATH\" 2>/dev/null || true\n      fi\n    fi\n\n    # Only delete the description if it matches the dev-launcher default text\n    DESC=$(/usr/libexec/PlistBuddy -c \"Print :NSLocalNetworkUsageDescription\" \"$PLIST_PATH\" 2>/dev/null || echo \"\")\n    if echo \"$DESC\" | grep -q \"Expo Dev Launcher\"; then\n      /usr/libexec/PlistBuddy -c \"Delete :NSLocalNetworkUsageDescription\" \"$PLIST_PATH\" 2>/dev/null || true\n    fi\n  fi\nfi\n";
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -356,7 +356,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F11748422D0307B40044C1D9 /* AppDelegate.swift in Sources */,
-				8AC9A4536809A608C5249D21 /* ExpoModulesProvider.swift in Sources */,
+				231F8F72D7CE31920648475D /* ExpoModulesProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,7 +365,7 @@
 /* Begin XCBuildConfiguration section */
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 395F4936D7B6687756A3145B /* Pods-CodepushpluginDemo.debug.xcconfig */;
+			baseConfigurationReference = 07EA303F9306288E76BF5C2C /* Pods-CodepushpluginDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -402,7 +402,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5C9CD25B7B9A1C49A50D9D82 /* Pods-CodepushpluginDemo.release.xcconfig */;
+			baseConfigurationReference = E3CD6B1D2AE849E4FFE55D88 /* Pods-CodepushpluginDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

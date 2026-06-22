@@ -67,14 +67,14 @@ if [ "$TEST_ONLY" = false ]; then
     if [ "$IS_EXPO" = true ]; then
       (cd "$EXAMPLE_DIR" && yarn ios --configuration Release --no-bundler)
     else
-      (cd "$EXAMPLE_DIR" && yarn ios --mode Release)
+      (cd "$EXAMPLE_DIR" && yarn ios --mode Release --no-packager)
     fi
   elif [ "$PLATFORM" = "android" ]; then
     adb -s "$ANDROID_DEVICE" uninstall "$BUNDLE_ID" 2>/dev/null || true
     if [ "$IS_EXPO" = true ]; then
       (cd "$EXAMPLE_DIR" && ANDROID_SERIAL="$ANDROID_DEVICE" yarn android --variant release --no-bundler)
     else
-      (cd "$EXAMPLE_DIR" && ANDROID_SERIAL="$ANDROID_DEVICE" yarn android --mode release)
+      (cd "$EXAMPLE_DIR" && ANDROID_SERIAL="$ANDROID_DEVICE" yarn android --mode release --no-packager)
     fi
   fi
 else

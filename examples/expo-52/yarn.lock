@@ -2256,9 +2256,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@turbopush/react-native-code-push@npm:^10.2.6":
-  version: 10.2.6
-  resolution: "@turbopush/react-native-code-push@npm:10.2.6"
+"@turbopush/react-native-code-push@npm:^10.3.0-rc.1":
+  version: 10.3.0-rc.1
+  resolution: "@turbopush/react-native-code-push@npm:10.3.0-rc.1"
   dependencies:
     code-push: "npm:4.2.3"
     glob: "npm:^7.1.7"
@@ -2266,7 +2266,7 @@ __metadata:
     plist: "npm:^3.0.4"
     semver: "npm:^7.3.5"
     xcode: "npm:3.0.1"
-  checksum: 10/c2b783895c7eeab35579a5471d27d32e988151d916a8ed57e105f649994c60dd0c353a7a42c172c73795e65b623311eb58db73c5e2c8effda178a65a389f2e1c
+  checksum: 10/9ca6ba9643995ecfea40fad38eea5e0b5aed0b9ce255e48e09b0f5bc92aab969380fdb239e62099988ab4ecb63163a22402b58de5b89d8a4f69591abad195195
   languageName: node
   linkType: hard
 
@@ -4248,7 +4248,7 @@ __metadata:
     "@expo/config-plugins": "npm:~9.0.0"
     "@repo/shared": "portal:../shared"
     "@turbopush/cli": "npm:^1.0.27"
-    "@turbopush/react-native-code-push": "npm:^10.2.6"
+    "@turbopush/react-native-code-push": "npm:^10.3.0-rc.1"
     "@types/react": "npm:~18.3.12"
     expo: "npm:~52.0.0"
     expo-application: "npm:~6.0.2"

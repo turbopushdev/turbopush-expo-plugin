@@ -2019,6 +2019,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@repo/shared@portal:../shared::locator=expo-53-newarch%40workspace%3A.":
+  version: 0.0.0-use.local
+  resolution: "@repo/shared@portal:../shared::locator=expo-53-newarch%40workspace%3A."
+  peerDependencies:
+    react: "*"
+    react-native: "*"
+  languageName: node
+  linkType: soft
+
 "@sec-ant/readable-stream@npm:^0.4.1":
   version: 0.4.1
   resolution: "@sec-ant/readable-stream@npm:0.4.1"
@@ -2065,7 +2074,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@turbopush/cli@npm:^1.0.25":
+"@turbopush/cli@npm:^1.0.27":
   version: 1.0.27
   resolution: "@turbopush/cli@npm:1.0.27"
   dependencies:
@@ -2105,9 +2114,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@turbopush/react-native-code-push@npm:^10.2.3":
-  version: 10.2.3
-  resolution: "@turbopush/react-native-code-push@npm:10.2.3"
+"@turbopush/react-native-code-push@npm:^10.3.0-rc.1":
+  version: 10.3.0-rc.1
+  resolution: "@turbopush/react-native-code-push@npm:10.3.0-rc.1"
   dependencies:
     code-push: "npm:4.2.3"
     glob: "npm:^7.1.7"
@@ -2115,7 +2124,7 @@ __metadata:
     plist: "npm:^3.0.4"
     semver: "npm:^7.3.5"
     xcode: "npm:3.0.1"
-  checksum: 10/f41349988528553520e75bb208dd3c0b630751a5c2cef33533b281519e3ebc07e0c27818dbec1ca9975bbdf343a9720a818fc0dbc238a3d5654ce1bc40cd2a17
+  checksum: 10/9ca6ba9643995ecfea40fad38eea5e0b5aed0b9ce255e48e09b0f5bc92aab969380fdb239e62099988ab4ecb63163a22402b58de5b89d8a4f69591abad195195
   languageName: node
   linkType: hard
 
@@ -3834,8 +3843,9 @@ __metadata:
   dependencies:
     "@babel/core": "npm:^7.20.0"
     "@expo/config-plugins": "npm:~10.1.1"
-    "@turbopush/cli": "npm:^1.0.25"
-    "@turbopush/react-native-code-push": "npm:^10.2.3"
+    "@repo/shared": "portal:../shared"
+    "@turbopush/cli": "npm:^1.0.27"
+    "@turbopush/react-native-code-push": "npm:^10.3.0-rc.1"
     "@types/react": "npm:~19.0.10"
     expo: "npm:^53.0.0"
     expo-application: "npm:~6.1.5"
