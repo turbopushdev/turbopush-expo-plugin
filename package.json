@@ -1,6 +1,6 @@
 {
   "name": "@turbopush/turbopush-expo-plugin",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "main": "./app.plugin.js",
   "license": "MIT",
   "files": [
