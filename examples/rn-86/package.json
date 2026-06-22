@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "@repo/shared": "portal:../shared",
-    "@turbopush/react-native-code-push": "file:../../../react-native-code-push/turbopush-react-native-code-push-10.2.6.tgz",
+    "@turbopush/react-native-code-push": "10.3.0-rc.1",
     "nativewind": "^4.0.1",
     "react": "19.2.3",
     "react-native": "0.86.0",

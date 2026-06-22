@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "@repo/shared": "portal:../shared",
-    "@turbopush/react-native-code-push": "^10.2.6",
+    "@turbopush/react-native-code-push": "10.3.0-rc.1",
     "expo": "~56.0.0",
     "expo-application": "~56.0.3",
     "expo-build-properties": "~56.0.12",
