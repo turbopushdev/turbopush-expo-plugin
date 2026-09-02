@@ -52,9 +52,11 @@ const config: ExpoConfig = {
       {
         android: {
           CodePushDeploymentKey: process.env.EXPO_PUBLIC_CODE_PUSH_KEY_ANDROID ?? "FAKE_KEY",
+          CodePushPublicKey: process.env.EXPO_PUBLIC_CODE_PUSH_PUBLIC_KEY,
         },
         ios: {
           CodePushDeploymentKey: process.env.EXPO_PUBLIC_CODE_PUSH_KEY_IOS ?? "FAKE_KEY",
+          CodePushPublicKey: process.env.EXPO_PUBLIC_CODE_PUSH_PUBLIC_KEY,
         },
       },
     ],

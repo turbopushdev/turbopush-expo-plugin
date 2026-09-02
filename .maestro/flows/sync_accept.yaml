@@ -1,0 +1,35 @@
+appId: ${BUNDLE_ID}
+---
+# Success scenario: the released update must be accepted (installs, app restarts with new version).
+- runScript:
+    file: ../scripts/exec.js
+    env:
+      HARNESS_URL: ${HARNESS_URL}
+      COMMAND: "bash ${ROOT_DIR}/scripts/set_env.sh ${APP_VERSION} ${EXAMPLE}"
+      ASYNC: "false"
+- runScript:
+    file: ../scripts/exec.js
+    env:
+      HARNESS_URL: ${HARNESS_URL}
+      COMMAND: "echo y | yarn turbopush deployment clear ${APP_SLUG} ${DEPLOYMENT}"
+      ASYNC: "false"
+- runScript:
+    file: ../scripts/exec.js
+    env:
+      HARNESS_URL: ${HARNESS_URL}
+      COMMAND: "yarn turbopush release-expo ${APP_SLUG} ${PLATFORM} ${TARGET_VERSION} -d ${DEPLOYMENT} -r 100 --mandatory ${SIGN_ARGS}"
+      ASYNC: "true"
+- runScript:
+    file: ../scripts/wait.js
+    env:
+      HARNESS_URL: ${HARNESS_URL}
+- launchApp:
+    clearState: true
+- assertVisible: "Status: UNKNOWN"
+- tapOn:
+    text: "Sync CodePush"
+- extendedWaitUntil:
+    visible:
+      text: "Turbopush Demo - ${APP_VERSION}"
+    timeout: 20000
+- assertNotVisible: "ERROR"

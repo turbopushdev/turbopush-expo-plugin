@@ -7,6 +7,8 @@ export const withIosBuildscriptDependency: ConfigPlugin<PluginConfigType> = (con
   if (!props.ios.CodePushDeploymentKey) return config
   return withInfoPlist(config, config => {
     config.modResults.CodePushDeploymentKey = props.ios.CodePushDeploymentKey
+    if (props.ios.CodePushPublicKey)
+      config.modResults.CodePushPublicKey = props.ios.CodePushPublicKey
     return config
   })
 }
