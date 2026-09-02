@@ -4,6 +4,7 @@
 export interface PluginConfigType {
   ios: {
     CodePushDeploymentKey: string
+    CodePushPublicKey?: string
   }
   android: {
     CodePushDeploymentKey: string

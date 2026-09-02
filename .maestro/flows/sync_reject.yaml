@@ -1,0 +1,33 @@
+appId: ${BUNDLE_ID}
+---
+# Reject scenario: the app has a public key but the update is unsigned -> signature verification fails.
+- runScript:
+    file: ../scripts/exec.js
+    env:
+      HARNESS_URL: ${HARNESS_URL}
+      COMMAND: "bash ${ROOT_DIR}/scripts/set_env.sh ${APP_VERSION} ${EXAMPLE}"
+      ASYNC: "false"
+- runScript:
+    file: ../scripts/exec.js
+    env:
+      HARNESS_URL: ${HARNESS_URL}
+      COMMAND: "echo y | yarn turbopush deployment clear ${APP_SLUG} ${DEPLOYMENT}"
+      ASYNC: "false"
+- runScript:
+    file: ../scripts/exec.js
+    env:
+      HARNESS_URL: ${HARNESS_URL}
+      COMMAND: "yarn turbopush release-expo ${APP_SLUG} ${PLATFORM} ${TARGET_VERSION} -d ${DEPLOYMENT} -r 100 --mandatory ${SIGN_ARGS}"
+      ASYNC: "true"
+- runScript:
+    file: ../scripts/wait.js
+    env:
+      HARNESS_URL: ${HARNESS_URL}
+- launchApp:
+    clearState: true
+- assertVisible: "Status: UNKNOWN"
+- tapOn:
+    text: "Sync CodePush"
+- extendedWaitUntil:
+    visible: "Status: SIGNATURE_ERROR"
+    timeout: 20000

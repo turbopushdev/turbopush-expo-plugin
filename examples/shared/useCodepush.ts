@@ -6,6 +6,7 @@ type CodepushStatus =
   | Extract<keyof typeof CodePush.SyncStatus, string>
   | "START"
   | "ERROR"
+  | "SIGNATURE_ERROR"
   | "UNKNOWN"
   | "RATE_LIMIT_ERROR"
   | "RATE_LIMIT_API_ERROR";
@@ -83,7 +84,21 @@ export const useCodepush = () => {
           const percentageFinal = Math.floor(calcPercentage);
           setPercentil(`${percentageFinal}%`);
         }
-      );
+      ).catch((error) => {
+        const message = String((error as Error)?.message ?? error);
+
+        const isSignatureError =
+          /could not be verified|code signing|no JWT signature|trusted party|no signature was found|no public key was found/i.test(
+            message
+          );
+
+        console.log(`codepush_sync_error`, {
+          message,
+          isSignatureError,
+        });
+
+        setStatus(isSignatureError ? "SIGNATURE_ERROR" : "ERROR");
+      });
     } catch (error) {
       if (/Rate limit is exceeded/.test((error as Error).message)) {
         setStatus("RATE_LIMIT_API_ERROR");

@@ -1,0 +1,31 @@
+{
+  "scenarios": [
+    {
+      "name": "accept-unsigned",
+      "buildSigning": false,
+      "releaseSigned": false,
+      "version": "1.0.1",
+      "flow": "sync_accept.yaml",
+      "before": "",
+      "after": ""
+    },
+    {
+      "name": "accept-signed",
+      "buildSigning": true,
+      "releaseSigned": true,
+      "version": "1.0.2",
+      "flow": "sync_accept.yaml",
+      "before": "",
+      "after": ""
+    },
+    {
+      "name": "reject-unsigned",
+      "buildSigning": true,
+      "releaseSigned": false,
+      "version": "1.0.3",
+      "flow": "sync_reject.yaml",
+      "before": "",
+      "after": ""
+    }
+  ]
+}
