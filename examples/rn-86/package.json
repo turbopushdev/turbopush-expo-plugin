@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "@repo/shared": "portal:../shared",
-    "@turbopush/react-native-code-push": "10.3.0-rc.1",
+    "@turbopush/react-native-code-push": "10.3.2",
     "nativewind": "^4.0.1",
     "react": "19.2.3",
     "react-native": "0.86.0",
@@ -35,7 +35,7 @@
     "@react-native/eslint-config": "0.86.0",
     "@react-native/metro-config": "0.86.0",
     "@react-native/typescript-config": "0.86.0",
-    "@turbopush/cli": "^1.0.27",
+    "@turbopush/cli": "^1.1.0",
     "@types/jest": "^29.5.13",
     "@types/react": "^19.2.0",
     "@types/react-test-renderer": "^19.1.0",

@@ -1,4 +1,5 @@
 <resources>
   <string name="app_name">Codepush plugin Demo</string>
-  <string name="CodePushDeploymentKey">dk_d9b95fe5b28ec161037d9751d69b304c</string>
+  <string name="CodePushDeploymentKey">dk_003ca044b3750f75a0491652fa91e909</string>
+  <string name="CodePushPublicKey">MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvJ5YA9X3Nt65MmXjLIG33ZdU9JxQgADSzhLcaHCKkbXBbmSnvedkkZEa1BwrHLHW49XFIB042vmxlMedDww8u2hoHGLLMtp9Ji/1LQE4MP9hSgAfDUylNgJlRNUPD8l0haWo/pXLJaUacbrBZvxeyBQcDCPSFh7so9m7Pwj23/aQ15UwatFmwNhO25HXPsY3gxDUC7riQYcf88SjkEZlqfNktkuNZppy014+h8DsHDbOcSISbWPzf9AawIT/tc95DOBu7E8ufbRNBrert1jcKvnQZQtD14dlITTbPkX4RzqLe5CsUbKfKRikMXF/wxzmddGFgcw/ItLWl6lUCXUpmQIDAQAB</string>
 </resources>
