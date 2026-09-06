@@ -37,6 +37,3 @@ expoAutolinking.useExpoVersionCatalog()
 
 include ':app'
 includeBuild(expoAutolinking.reactNativeGradlePlugin)
-
-include ':react-native-code-push'
-project(':react-native-code-push').projectDir = new File(["node", "--print", "require.resolve('@turbopush/react-native-code-push/package.json')"].execute(null, rootDir).text.trim(), "../android/app")

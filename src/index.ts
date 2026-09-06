@@ -3,7 +3,6 @@ import { ConfigPlugin, createRunOncePlugin } from '@expo/config-plugins'
 import {
   withAndroidBuildscriptDependency,
   withAndroidMainApplicationDependency,
-  withAndroidSettingsDependency,
   withAndroidStringsDependency
 } from './android'
 import { withIosAppDelegateObjectiveCDependency, withIosBuildscriptDependency, withIosAppDelegateSwiftDependency } from './ios'
@@ -22,7 +21,6 @@ const withRnCodepush: ConfigPlugin<PluginConfigType> = (config, props) => {
   }
 
   config = withAndroidBuildscriptDependency(config, props)
-  config = withAndroidSettingsDependency(config, props)
   config = withAndroidStringsDependency(config, props)
   config = withAndroidMainApplicationDependency(config, props)
   // plugins order matter: the later one would run first
